@@ -33,6 +33,16 @@ class ViewController: UIViewController
         button.addTarget(self, action: Selector("buttonClick:"), forControlEvents: .TouchUpInside)
         
     }
+    
+    
+    @IBOutlet weak var buttonClick: UIButton!
+    
+ 
+    @IBAction func buttonClickOne(sender: UIButton) {
+        
+        
+        self.navigationController?.pushViewController(File3VC(), animated: true)
+    }
     func buttonClick(button:UIButton){
         print("")
         
